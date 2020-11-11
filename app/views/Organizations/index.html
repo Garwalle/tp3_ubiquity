@@ -1,0 +1,13 @@
+<h1>Messagerie Administration</h1>
+
+<h2>Organizations :</h2>
+<ul>
+{% for orga in orgas %}
+	<li>
+		{{orga.id}}. {{orga}}
+		<button class="ui small blue button" onclick="location.href='http://127.0.0.1:8090/Organizations/display/{{orga.id}}';">
+		view
+		</button>
+	</li>
+{% endfor %}
+</ul>
