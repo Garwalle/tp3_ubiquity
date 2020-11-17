@@ -14,12 +14,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.3',
-    'version' => '1.0.3.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '47d5c7ec6de20334cdaf321361fd338e035934dd',
     'name' => 'phpmv/ubiquity-project',
   ),
   'versions' => 
@@ -44,12 +44,12 @@ private static $installed = array (
     ),
     'phpmv/php-mv-ui' => 
     array (
-      'pretty_version' => '2.3.10',
-      'version' => '2.3.10.0',
+      'pretty_version' => '2.3.11',
+      'version' => '2.3.11.0',
       'aliases' => 
       array (
       ),
-      'reference' => '87cc87e78c8eb63487db9b3f21fbd1502eb9b18f',
+      'reference' => 'e370f7ec5bc50fecf29cd5c19a04c505baf2397b',
     ),
     'phpmv/ubiquity' => 
     array (
@@ -98,12 +98,12 @@ private static $installed = array (
     ),
     'phpmv/ubiquity-project' => 
     array (
-      'pretty_version' => '1.0.3',
-      'version' => '1.0.3.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '47d5c7ec6de20334cdaf321361fd338e035934dd',
     ),
     'phpmv/ubiquity-webtools' => 
     array (

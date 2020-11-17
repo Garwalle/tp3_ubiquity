@@ -92,17 +92,17 @@
         },
         {
             "name": "phpmv/php-mv-ui",
-            "version": "2.3.10",
-            "version_normalized": "2.3.10.0",
+            "version": "2.3.11",
+            "version_normalized": "2.3.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpMv/phpMv-UI.git",
-                "reference": "87cc87e78c8eb63487db9b3f21fbd1502eb9b18f"
+                "reference": "e370f7ec5bc50fecf29cd5c19a04c505baf2397b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpMv/phpMv-UI/zipball/87cc87e78c8eb63487db9b3f21fbd1502eb9b18f",
-                "reference": "87cc87e78c8eb63487db9b3f21fbd1502eb9b18f",
+                "url": "https://api.github.com/repos/phpMv/phpMv-UI/zipball/e370f7ec5bc50fecf29cd5c19a04c505baf2397b",
+                "reference": "e370f7ec5bc50fecf29cd5c19a04c505baf2397b",
                 "shasum": ""
             },
             "require": {
@@ -114,7 +114,7 @@
                 "fomantic/ui": "~2.7.8",
                 "twitter/bootstrap": "~3.3"
             },
-            "time": "2020-07-26T13:14:47+00:00",
+            "time": "2020-11-12T00:39:12+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -155,7 +155,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpMv/phpMv-UI/issues",
-                "source": "https://github.com/phpMv/phpMv-UI/tree/2.3.10"
+                "source": "https://github.com/phpMv/phpMv-UI/tree/2.3.11"
             },
             "install-path": "../phpmv/php-mv-ui"
         },
@@ -755,5 +755,15 @@
             "install-path": "../twig/twig"
         }
     ],
-    "dev": true
+    "dev": true,
+    "dev-package-names": [
+        "frameworks/jquery",
+        "mindplay/annotations",
+        "phpmv/php-mv-ui",
+        "phpmv/ubiquity-codeception",
+        "phpmv/ubiquity-commands",
+        "phpmv/ubiquity-dev",
+        "phpmv/ubiquity-devtools",
+        "phpmv/ubiquity-webtools"
+    ]
 }

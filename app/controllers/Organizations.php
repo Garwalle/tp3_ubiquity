@@ -10,16 +10,24 @@ use models\Organization;
  */
 class Organizations extends ControllerBase {
 	public function index() {
+		$this->jquery->getHref ( "a", null, [ 
+				"hasLoader" => false,
+				"historize" => false
+		] );
 		$organizations = DAO::getAll ( Organization::class );
-		$this->loadView ("Organizations/index.html", ["orgas" => $organizations]);
+		$this->jquery->renderDefaultView ( [ 
+				"orgas" => $organizations
+		] );
 	}
-	
+
 	/**
-	 * 
+	 *
 	 * @get("{idOrga}","name"=>"orgas-display")
 	 */
 	public function display($idOrga) {
-		$organization = DAO::getById(Organization::class, $idOrga);
-		$this->loadView ("Organizations/display.html", ["orga" => $organization]);
+		$organization = DAO::getById ( Organization::class, $idOrga );
+		$this->jquery->renderDefaultView ( [
+				"orga" => $organization
+		] );
 	}
 }
