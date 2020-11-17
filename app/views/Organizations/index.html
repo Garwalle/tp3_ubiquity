@@ -5,15 +5,7 @@
 {% for orga in orgas %}
 	<li>
 		{{orga.id}}. {{orga}}
-		<button>
-		<a href="Organizations/display/{{orga.id}}" data-target="#details">view</a>
-		</button>		
+		<button><a href="orga/display/{{orga.id}}">view</a></button>
 	</li>
 {% endfor %}
 </ul>
-
-<div id="details">
-
-
-</div>
-{{ script_foot | raw}}

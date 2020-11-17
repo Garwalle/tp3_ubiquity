@@ -7,27 +7,22 @@ use models\Organization;
 
 /**
  * Controller Organizations
+ * @route("/orga/","automated"=>true)
  */
-class Organizations extends ControllerBase {
-	public function index() {
-		$this->jquery->getHref ( "a", null, [ 
-				"hasLoader" => false,
-				"historize" => false
-		] );
-		$organizations = DAO::getAll ( Organization::class );
-		$this->jquery->renderDefaultView ( [ 
-				"orgas" => $organizations
-		] );
-	}
 
+class Organizations extends ControllerBase {
+	
+	public function index() {
+		$organizations = DAO::getAll ( Organization::class );
+		$this->loadDefaultView(["orgas" => $organizations]);
+	}
+	
 	/**
-	 *
-	 * @get("{idOrga}","name"=>"orgas-display")
+	 * 
+	 * @get("display/{idOrga}")
 	 */
 	public function display($idOrga) {
-		$organization = DAO::getById ( Organization::class, $idOrga );
-		$this->jquery->renderDefaultView ( [
-				"orga" => $organization
-		] );
+		$organization = DAO::getById(Organization::class, $idOrga);
+		$this->loadDefaultView( ["orga" => $organization]);
 	}
 }
